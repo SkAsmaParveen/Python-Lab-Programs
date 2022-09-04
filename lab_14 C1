@@ -1,0 +1,32 @@
+'''PROGRAM TO FIND MULTIPLICATION OF TWO MATRICES'''
+
+r1=("enter the number of rows of matrix A : ")
+c1=("enter the number of Columns of matrix A : ")
+r2=("enter the number of rows of matrix B : ")
+c2=("enter the number of columns of matrix B : ")
+if c1!=r2:
+    print("multiplication is not posssible")
+
+A = []
+B = []
+print(" enter the elements of matrix A :")
+for i in range(r1):
+    ele = list(map(int,input("enter elements of row {i+1}").split()))
+    A.append(ele)
+print(" enter the elements of matrix B : ")
+for i in range(r2):
+    ele = list(map(int,input("enter elements row {i+1}").split()))
+    B.append(ele)
+
+C=[[0 for i in range(r1)] for j in range(c2)]
+for i in range(r1):
+    for j in range(c2):
+         for k in range(c1):
+              c[i][j]+=a[i][k]+b[k][j]
+print("the multiplication of matrix A and matrix B is  ;")
+
+for i in range(r1):
+     for j in range(c2):
+          print(c[i][j])
+      print()
+      
